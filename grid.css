@@ -1,0 +1,53 @@
+/* We set max width for the whole
+ container...But padding for each 
+ column, when 'row' is the class only 
+ of the parent container. Is it getting 
+ attributed to all child divs? */
+*{
+	box-sizing: border-box;
+}
+
+.row {
+	max-width: 1000px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin:0 auto;
+}
+
+/* How does it work?? */
+
+.row::before, .row::after {
+	display: table;
+	content: "";
+}
+
+.row::after {
+	clear: both;
+	}
+
+/* display: table; should make objects act as table.
+Why do we have to apply float:left;? */
+
+.col-4, .col-12 {
+	float: left;
+	padding-left: 1.04166666%;
+  	padding-right: 1.04166666%;
+}
+
+.col-4, .col-12 {
+	width: 100%;
+}
+
+
+/* is it a special command? */
+
+
+@media only screen and (min-width: 640px){
+	.col-4 {
+		width: 33.3%;
+	}
+
+	.col-12 {
+		width: 100%;
+	}
+}

@@ -1,0 +1,63 @@
+main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.navbk{
+	background-color: orange;
+	max-width: 100%;
+	height: 60px;
+	position: relative;
+}
+
+.nav {
+	background-color: orange;
+	max-width: 100%;
+	height: 60px;
+	position: absolute;
+	top:0;
+}
+
+.header {
+	font-size: 20px;
+}
+
+.header2{
+	font-size: 15px;
+	font-weight: normal;
+	position: absolute;
+	top: 20px;
+}
+
+.box {
+	height: 300px;
+	text-align: left;
+	margin-bottom: 90px;
+}
+
+.photo{
+	max-width: 100%;
+}
+ 
+.name{
+	font-size: 20px;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.desc{
+	font-weight: normal;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+}
+
+.txt{
+	padding-left: 5px;
+}
+
+/* How to make txt with less margin (closer to the pic)? */
+
+.cbox{
+	border: 1px solid grey;
+}
